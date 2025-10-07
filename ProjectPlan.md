@@ -12,4 +12,4 @@
 
 ### Constraints
 
-### Graps
+### Gaps
