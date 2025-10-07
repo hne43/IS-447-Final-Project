@@ -2,7 +2,12 @@
 
 ### Overview
 
+The goal of this project is to analyze different socioeconomic factors, such as poverty rate and median income and look into the relationship between these factors and obesity rates in each county in Illinois. 
+
 ### Research Question(s)
+
+How do different socioeconomic factors in Illinois, such as location, poverty rate, median income, and overall demographics, relate to the population's food access and nutritional health?
+
 
 ### Team
 Grace Requeno and Lillian Hsu
