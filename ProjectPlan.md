@@ -12,6 +12,26 @@ How do different socioeconomic factors in Illinois, such as location, poverty ra
 ### Team
 Grace Requeno and Lillian Hsu
 
+#### Roles
+Grace
+- Data cleaning for two datasets
+- Data integration
+- Document data quality
+- Interim status report
+- Data analysis
+- Create workflow automation 
+- Final project submission
+  
+Lillian
+- Data cleaning for the other two datasets
+- Data integration
+- Document data policy constraints and ethics
+- Interim status report
+- Data analysis
+- Document metadata
+- Create workflow automation
+
+
 ### Datasets
 
 ### Timeline
