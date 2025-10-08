@@ -50,7 +50,7 @@ Week 3 (Oct 20 - Oct 27):
 Week 4 (Oct 28 - Nov 4): 
 - Document data quality
 - Work on interim status report
-  
+  s
 Week 5 (Nov 5 - Nov 12):
 - Get started on workflow automation
   
@@ -67,5 +67,8 @@ Week 8 (Nov 29 - Dec 6):
 
 
 ### Constraints
+
+1. The study focuses on Illinois counties only, so the findings may not be applicable for other states or regions.
+2. The analysis can identify associations between socioeconomic factors and nutritional health, but cannot draw any causal relationships.
 
 ### Gaps
