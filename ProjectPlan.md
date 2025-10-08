@@ -96,3 +96,5 @@ Week 8 (Nov 29 - Dec 6):
 2. The analysis can identify associations between socioeconomic factors and nutritional health, but cannot draw any causal relationships.
 
 ### Gaps
+
+As for some research gaps, it seems that the majority of the datasets we have found mostly cover health information about impoverished areas. It would be interesting and important to find more data relating to wealthier areas to serve as a better sense of comparison. Additionally, we do not currently have much data covering specific rural areas in different parts of Illinois. Most of our data covers broader areas, so it would be good to find more data about Illinois health in particular. 
