@@ -17,12 +17,15 @@ Fit for use: Overall, this dataset is fit for use, but does require a little bit
 
 The Food Environment Atlas Data (2025) includes nine different datasets within the overall file. This includes datasets on: Access, Stores, Restaurants, Assistance, Insecurity, Taxes, Local, Health, and Socioeconomic data. 
 
-The Health Dataset
+**The Health Dataset**
+
 The Health dataset focuses on data specific to health metrics like obesity rate, as well as metrics relating to physical activity access among a community. It is important to analyze these metrics with respect to the different counties also included. In specific, we will be analyzing these metrics in Illinois and comparing the data among the different counties. This will allow us to get a better scope on our research question which is specific to the different counties in Illinois and how different socioeconomic factors affect nutritional and physical health throughout the state.
 
 When starting the data cleaning, it was very important to take the research question into consideration. The first task in data cleaning was to minimize the dataset to only focus on the State of Illinois. The original dataset was at 3144 rows (including all the states), and after minimizing the scope to Illinois, the dataset shrank to 102 rows. This makes the dataset a lot easier to interpret. The next step was to narrow down which columns I thought might be most important. I decided to narrow this down to “FIPS” (the Primary Key for future integration steps), “State”, “County”, "PCT_OBESE_ADULTS22", "PCT_HSPA21", "RECFAC20", "RECFACPTH20", "PCH_RECFACPTH_16_20"
 The overall gist of the columns chosen covers obesity and diabetes rates in adults, as well as physical activity trends among them. It was also important to include the columns that cover access to fitness resources as that could count as a socioeconomic factor. Some areas may have overall better access to self-care resources such as fitness resources.
 
 Lastly, I decided to finish cleaning the dataset by looking for null values. The data source stated that null values were denoted either by “N/A” and “-9999”, and when searching through the dataset to see how prevalent they were, I found that there were 59 total rows to include null values, only for access to fitness resources, “RECFAC20”, “RECFACPTH20”, and “PCH_RECFACPTH_16_20”. I debated whether to keep the rows with null values or not, and decided keeping them would be better as the access to fitness resources is more of a background attribute.
+
+**The Socioeconomic Dataset**
 
 
