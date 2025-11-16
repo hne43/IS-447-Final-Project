@@ -26,9 +26,7 @@ Lastly, I decided to finish cleaning the dataset by looking for null values. The
 
 **The Socioeconomic Dataset**
 
-**Contributions**
-
-Lillian: 
-
+**Contributions**  
+Lillian:   
 I worked on the dataset that's about behavioral risk factor. The main thing I was working with this dataset was to explore the relationships between each factors, which would be helpful to our project. From this process, I found that Race/Ethnicity is related to how much people are consuming fruits and vegetables. And, I also looked at the relationship between obesity rates and people's income, trying to see if income is a big factor when it comes to obesity. Using this dataset's exploration analysis, we were able to know what socioeconomic factors we wanted to focus on in order to complete this project in a more more efficient way. After EDA, I then worked documenting the data quality of this dataset, using the four criteria taught in class.
 
