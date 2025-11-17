@@ -24,7 +24,7 @@ Timeliness: The dataset mostly covered data from 2019.
 
 Consistency: The consistency of the dataset was good. Checking between the different datasets/sections of the overall dataset, Illinois rows were consistent, as well as each row key. This told me that I could trust the different datasets to be integrated smoothly with each other.
 
-Fit for use: Overall, I would say the dataset was fit for use. I think more exploration of accuracy and consistency could be good. For example, I could explore separate datasets to test these metrics, but I would say that it was good overall.
+Fit for use: Overall, the dataset was fit for use. More exploration of accuracy and consistency could be good. For example, I could explore separate datasets to test these metrics, but I would say that it was good overall.
 
 **Data Cleaning**
 
