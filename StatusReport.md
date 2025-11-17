@@ -40,4 +40,4 @@ I worked on the dataset that's about behavioral risk factor. The main thing I wa
 
 Grace:
 
-
+I worked on the dataset about food access data and several different factors related to the topic such as several different socioeconomic factors (The Socioeconomic Dataset) and health related factors (The Health Dataset). My main goal with the two datasets within this overall dataset was to find what features may help us find underlying patterns regarding a population’s nutritional status and food access and their relationship with several different socioeconomic factors. It was helpful to look at all of the different variables within the different datasets and consider how they may work together overall.
