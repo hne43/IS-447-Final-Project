@@ -25,8 +25,19 @@ The overall gist of the columns chosen covers obesity and diabetes rates in adul
 Lastly, I decided to finish cleaning the dataset by looking for null values. The data source stated that null values were denoted either by “N/A” and “-9999”, and when searching through the dataset to see how prevalent they were, I found that there were 59 total rows to include null values, only for access to fitness resources, “RECFAC20”, “RECFACPTH20”, and “PCH_RECFACPTH_16_20”. I debated whether to keep the rows with null values or not, and decided keeping them would be better as the access to fitness resources is more of a background attribute.
 
 **The Socioeconomic Dataset**
+The Socioeconomic dataset focuses on data specific to socioeconomic metrics such as race, age, and income levels across different counties throughout the United States. Like mentioned earlier, we will only be focusing on counties in Illinois to get a more focused scope on our research question.
+
+The first task in data cleaning for this dataset was minimizing to only focus on data in Illinois. Similarly to the Health dataset, this caused the number of rows to shrink down to 102 rows. Again, this makes the dataset a lot easier to interpret. I then also narrowed down the columns I wanted to focus on to: 
+
+"FIPS", "State", "County", "PCT_NHWHITE20", "PCT_NHBLACK20", "PCT_HISP20", "PCT_NHASIAN20", "PCT_65OLDER20", "PCT_18YOUNGER20", "POPLOSS15", "METRO23", "MEDHHINC21", "POVRATE21", "DEEPPOVRATE21", "CHILDPOVRATE21", "DEEPCHILDPOVRATE21"
+
+I narrowed it down to these columns because they were more focused on specific demographics, age groups, and poverty rates which are all socioeconomic factors that we figured might be useful for our study. Lastly, I noticed that there were no null values in the dataset, so it was cleaned and ready to be put to use.
+
 
 **Contributions**  
 Lillian:   
 I worked on the dataset that's about behavioral risk factor. The main thing I was working with this dataset was to explore the relationships between each factors, which would be helpful to our project. From this process, I found that Race/Ethnicity is related to how much people are consuming fruits and vegetables. And, I also looked at the relationship between obesity rates and people's income, trying to see if income is a big factor when it comes to obesity. Using this dataset's exploration analysis, we were able to know what socioeconomic factors we wanted to focus on in order to complete this project in a more more efficient way. After EDA, I then worked documenting the data quality of this dataset, using the four criteria taught in class.
+
+Grace:
+
 
