@@ -11,6 +11,19 @@ Consistency: The consistency was checked by checking if there are any logic erro
 
 Fit for use: Overall, this dataset is fit for use, but does require a little bit of cleaning, such as getting rid of the data of the states that we’re not interested in and also deal with the missing values. 
 
+Economic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
+
+Accuracy: To assess the accuracy of this dataset, I analyzed the documentation of the dataset. I noticed that information for the dataset was taken from a 2019 list of official supermarkets, accompanied by several census data that included the given information. For these reason, I assessed that the dataset could be accurate and trustworthy, but there is definitely more exploration that could be done for accuracy by checking external sources.
+
+Completeness: The dataset was mostly complete. For the socioeconomic section of the dataset, there were no null values detected for the state of Illinois and the columns I chose to focus on. For the health section of the dataset, there were some null values for columns that were not completely important or related that we chose to focus on. I found that the dataset was overall good for use, and a form of imputation could be implemented if needed.
+
+
+Timeliness: The dataset mostly covered data from 2019.
+
+Consistency: The consistency of the dataset was good. Checking between the different datasets/sections of the overall dataset, Illinois rows were consistent, as well as each row key. This told me that I could trust the different datasets to be integrated smoothly with each other.
+
+Fit for use: Overall, I would say the dataset was fit for use. I think more exploration of accuracy and consistency could be good. For example, I could explore separate datasets to test these metrics, but I would say that it was good overall.
+
 **Data Cleaning**
 
 The Food Environment Atlas Data (2025) includes nine different datasets within the overall file. This includes datasets on: Access, Stores, Restaurants, Assistance, Insecurity, Taxes, Local, Health, and Socioeconomic data. 
