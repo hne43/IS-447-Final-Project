@@ -47,12 +47,92 @@ However, in the second plot, it can be seen that race/ethnicity has a stronger r
 
 ## Future Work
 ## Reproducing
-### Python Setup
-````
+### Data Acquisition
+### Data Cleaning
+#### Python Setup
+```
 import pandas as pd
 import seaborn as sns
 import matplotlib.pypplot as plt
-````
+```
+#### Load Data
+```
+df1 = pd.read_csv('nutritional_physical.csv')
+```
+#### Data Filtering
+```
+df_illinois = df1[df1["LocationAbbr"] == "IL"]
+df_illinois_income = df_illinois[df_illinois["StratificationCategory1"] == "Income"]
+df_illinois_age = df_illinois[df_illinois["StratificationCategory1"] == "Age (years)"]
+df_illinois_race = df_illinois[df_illinois["StratificationCategory1"] == "Race/Ethnicity"]
+df_illinois_edu = df_illinois[df_illinois["StratificationCategory1"] == "Education"]
+df_illinois_sex= df_illinois[df_illinois["StratificationCategory1"] == "Sex"]
+df_illinois_income_obesity = df_illinois_income[df_illinois_income["Class"] == "Obesity / Weight Status"]
+df_illinois_income_fruits = df_illinois_income[df_illinois_income["Class"] == "Fruits and Vegetables"]
+df_illinois_race_obesity = df_illinois_race[df_illinois_race["Class"] == "Obesity / Weight Status"]
+df_illinois_race_fruits = df_illinois_race[df_illinois_race["Class"] == "Fruits and Vegetables"]
+```
+#### Create Visualizations 
+```
+income_obesity_means = df_illinois_income_obesity.groupby("Income")["Data_Value"].mean()
+
+# Create bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(income_obesity_means.index, income_obesity_means.values)
+
+plt.title("Average Obesity Rate by Income in Illinois")
+plt.xlabel("Income")
+plt.ylabel("Average Data Value")
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+plt.show()
+```
+```
+income_fruit_means = df_illinois_income_fruits.groupby("Income")["Data_Value"].mean()
+
+# Create bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(income_fruit_means.index, income_fruit_means.values)
+
+plt.title("Average Fruit Consumption by Income in Illinois")
+plt.xlabel("Income")
+plt.ylabel("Average Data Value")
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+plt.show()
+```
+```
+race_obesity_means = df_illinois_race_obesity.groupby("Race/Ethnicity")["Data_Value"].mean()
+
+# Create bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(race_obesity_means.index, race_obesity_means.values)
+
+plt.title("Average Obesity Rate by Race/Ethnicity in Illinois")
+plt.xlabel("Race/Ethnicity")
+plt.ylabel("Average Data Value")
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+plt.show()
+```
+```
+race_fruit_means = df_illinois_race_fruits.groupby("Race/Ethnicity")["Data_Value"].mean()
+
+# Create bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(race_fruit_means.index, race_fruit_means.values)
+
+plt.title("Average Fruit Consumption by Race/Ethnicity in Illinois")
+plt.xlabel("Race/Ethnicity")
+plt.ylabel("Average Data Value")
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+plt.show()
+```
 ## References
 - U.S. Department of Agriculture, Economic Research Service. Food Environment Atlas. https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads
 - Economic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
