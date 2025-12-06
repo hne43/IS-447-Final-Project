@@ -1,7 +1,14 @@
 # Socioeconomic Factors and Access to Nutrition in Illinois
 Contributors: Grace Requeno and Lillian Hsu
-## Abstract !! need to add a summary of our findings here!!
+## Summary
 The goal of this project is to investigate the relationship between socioeconomic factors and obesity rates across counties in Illinois. By examining variables such as poverty rate, median household income, geographic location, and demographic composition, the analysis seeks to uncover patterns that link economic and social conditions to disparities in food access and nutritional health. Understanding these relationships can provide insights into how structural inequities influence health outcomes and inform targeted interventions to promote healthier communities across the state.
+
+Nutrition and health outcomes are not solely determined by personal choices, they are also shaped by broader structural conditions. Communities with limited access to healthy foods, fewer resources, and socioeconomic disadvantages often face higher risks of obesity and poor dietary habits. Understanding these patterns in Illinois is important for identifying which populations are most affected and for informing policies that promote more equitable access to nutrition across the state. This project aims to provide insight into these disparities and support data-driven approaches to improving public health.
+
+### Research Questions
+- How do different socioeconomic factors in Illinois, such as location, poverty rate, median income, and overall demographics, relate to the population's food access and nutritional health?
+
+add a summary of findings here!
 
 ## Data
 ### Economic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
@@ -48,12 +55,24 @@ However, in the second plot, it can be seen that race/ethnicity has a stronger r
 ## Future Work
 ## Reproducing
 ### Data Acquisition
+- U.S. Department of Agriculture, Economic Research Service. Food Environment Atlas. https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads
+  
+  aaa
+  
+- Economic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
+
+  aaa
+  
+- Centers for Disease Control and Prevention. (2025, September 16). Nutrition, Physical Activity, and Obesity - Behavioral Risk Factor Surveillance System. Data.CDC.gov. https://data.cdc.gov/Nutrition-Physical-Activity-and-Obesity/Nutrition-Physical-Activity-and-Obesity-Behavioral/hn4x-zwk7/about_data
+  
+  aaa
+  
 ### Data Cleaning
 #### Python Setup
 ```
 import pandas as pd
 import seaborn as sns
-import matplotlib.pypplot as plt
+import matplotlib.pyplot as plt
 ```
 #### Load Data
 ```
@@ -79,12 +98,10 @@ income_obesity_means = df_illinois_income_obesity.groupby("Income")["Data_Value"
 # Create bar chart
 plt.figure(figsize=(10, 6))
 plt.bar(income_obesity_means.index, income_obesity_means.values)
-
 plt.title("Average Obesity Rate by Income in Illinois")
 plt.xlabel("Income")
 plt.ylabel("Average Data Value")
 plt.xticks(rotation=45)
-
 plt.tight_layout()
 plt.show()
 ```
@@ -94,12 +111,10 @@ income_fruit_means = df_illinois_income_fruits.groupby("Income")["Data_Value"].m
 # Create bar chart
 plt.figure(figsize=(10, 6))
 plt.bar(income_fruit_means.index, income_fruit_means.values)
-
 plt.title("Average Fruit Consumption by Income in Illinois")
 plt.xlabel("Income")
 plt.ylabel("Average Data Value")
 plt.xticks(rotation=45)
-
 plt.tight_layout()
 plt.show()
 ```
@@ -109,12 +124,10 @@ race_obesity_means = df_illinois_race_obesity.groupby("Race/Ethnicity")["Data_Va
 # Create bar chart
 plt.figure(figsize=(10, 6))
 plt.bar(race_obesity_means.index, race_obesity_means.values)
-
 plt.title("Average Obesity Rate by Race/Ethnicity in Illinois")
 plt.xlabel("Race/Ethnicity")
 plt.ylabel("Average Data Value")
 plt.xticks(rotation=45)
-
 plt.tight_layout()
 plt.show()
 ```
@@ -124,12 +137,10 @@ race_fruit_means = df_illinois_race_fruits.groupby("Race/Ethnicity")["Data_Value
 # Create bar chart
 plt.figure(figsize=(10, 6))
 plt.bar(race_fruit_means.index, race_fruit_means.values)
-
 plt.title("Average Fruit Consumption by Race/Ethnicity in Illinois")
 plt.xlabel("Race/Ethnicity")
 plt.ylabel("Average Data Value")
 plt.xticks(rotation=45)
-
 plt.tight_layout()
 plt.show()
 ```
