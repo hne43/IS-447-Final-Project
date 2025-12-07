@@ -42,6 +42,8 @@ Consistency: The consistency was checked by checking if there are any logic erro
 
 - **Fit for use**: Overall, this dataset is fit for use, but does require a little bit of cleaning, such as getting rid of the data of the states that we’re not interested in and also deal with the missing values.
 
+## Data Cleaning
+
 ## Findings
 As part of the analysis, we explored several socioeconomic factors, specifically race/ethnicity and income, to determine whether they showed any meaningful relationships with obesity rates and fruit consumption across Illinois. By comparing obesity prevalence and nutritional behavior indicators with demographic and economic characteristics, we aimed to identify potential patterns in how different communities experience access to healthy foods. This comparison helped us investigate whether disparities in income or racial/ethnic composition might be associated with differences in dietary habits or obesity outcomes. This data exploration also helped us determine which socioexoniomic factor we should focus on.
 Below are two barplots showing the relationships between obesity rates and income and race/ethnicity.
