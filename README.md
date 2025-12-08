@@ -59,10 +59,16 @@ However, in the second plot, it can be seen that race/ethnicity has a stronger r
 <img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/f1a9e7c6-0649-40c7-8ce9-01f87356fc44" />
 
 The scatter plot showing the relationship between median household income and food access per capita seems to show an upward trend. This is shown by the solid red line in the middle that is also surrounded by several data points. This tells us that counties with higher incomes do tend to have better food access resources. So, counties and environments that have residents who are more advantaged economically are also more likely to be more advanced with their healthy living habits, such as better healthy food access. 
+<img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/e3eed20d-0901-4f2a-8eb5-d3903c3c41b5" />
 
 The scatter plot showing the relationship between poverty rate and food access per capita seems to show a negative relationship, further relating to and confirming the previous scatter plot’s suggestions. The pattern shown in this scatter plot indicates that disadvantaged communities have less access to healthy food access and environments. This also suggests that these counties likely lack funding for better food access distribution, causing worse health outcomes among their residents.
+<img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/9b538d42-2812-4637-a2ae-abc3ac6599ad" />
+
 
 The scatter plot showing the relationship between poverty rate and change in per-capita food access shows that more economically disadvantaged communities seemed to experience less meaningful improvements in food access over time. This is especially important to consider because although it may be acknowledged that lower-income communities have worse access to healthy resources, it seems as though not much is being done about it by policymakers. This points to some economic disparities and hardships that need to be addressed. Higher-income communities seem to be advancing quicker while lower-income communities are struggling to keep up with these trends.
+
+<img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/b0ba92de-8538-4386-ba33-f7ede290ae9e" />
+
 
 Overall, across these three scatter plots, it is evident that economic conditions, especially relating to income and poverty rates, play quite a major role in food access and health equity across several counties in Illinois. Higher-income counties already have better access to healthy food resources, but also advance and improve quicker with their resources. These findings point us to consider how policymakers and public health officials can make initiatives on improving the quality of living and health of those in less fortunate situations.
 
