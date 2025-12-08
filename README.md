@@ -13,7 +13,8 @@ Ultimately, this research would offer a solid foundation in understanding how se
 ### Research Questions
 - How do different socioeconomic factors in Illinois, such as location, poverty rate, median income, and overall demographics, relate to the population's food access and nutritional health?
 
-add a summary of findings here!
+Our analysis found that while income did not show a strong or consistent relationship with obesity rates across Illinois counties, race and ethnicity did, with Asian populations exhibiting significantly lower obesity prevalence. Economic conditions, however, showed a much stronger connection to food access and nutritional environments. Counties with a higher income tended to have more access to healthy food resources, whereas counties with higher poverty rates consistently faced reduced food access and fewer healthy food resources. Moreover, changes in food access over time revealed that disadvantaged communities not only have poorer access but also experience slower improvements, suggesting inequities as wealthier wealthier counties continue to progress more quickly. Overall, the findings highlight that poverty and broader socioeconomic disadvantages are key determinants of disparities in food access and nutritional health, emphasizing the need for policies and public health to support disadvantaged communities. 
+
 
 ## Data Profile + Quality
 ### Economic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
