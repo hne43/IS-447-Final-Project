@@ -88,15 +88,15 @@ Overall, there are a lot of different directions that future work in this subjec
 ### Data Acquisition
 - U.S. Department of Agriculture, Economic Research Service. Food Environment Atlas. https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads
   
-  aaa
+  When downloading this dataset, download as a csv file and save two of the different subdatasets, the HEALTH and SOCIOECONOMIC datasets. Save those two as csv files and name them '25_food_env_data_HEALTH' and '25_food_env_data_SOCIOECONOMIC' accordingly, with the csv tag at the end.
   
 - Economic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
 
-  aaa
+  When downloading this dataset, download as a csv file for analysis.
   
 - Centers for Disease Control and Prevention. (2025, September 16). Nutrition, Physical Activity, and Obesity - Behavioral Risk Factor Surveillance System. Data.CDC.gov. https://data.cdc.gov/Nutrition-Physical-Activity-and-Obesity/Nutrition-Physical-Activity-and-Obesity-Behavioral/hn4x-zwk7/about_data
   
-  aaa
+  When downloading this dataset, download as a csv file and rename it 'nutritional_physical' with the csv tag at the end.
   
 ### Data Cleaning
 #### Python Setup
