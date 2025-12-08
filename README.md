@@ -176,7 +176,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
-#### Health Dataset
+#### Analyzing the Health Dataset
 ```
 # Analyze Data Table
 fed_health_df = pd.read_csv('25_food_env_data_HEALTH.csv')
@@ -186,7 +186,7 @@ focused_IL_health_df = IL_fed_health_df[focus_health_columns]
 focused_IL_health_df
 ```
 
-#### Socioeconomic Dataset
+#### Analyzing the Socioeconomic Dataset
 
 ```
 fed_socioeconomic_df = pd.read_csv('25_food_env_data_SOCIOECONOMIC.csv')
@@ -196,7 +196,7 @@ focused_IL_socioeconomic_df = IL_fed_socioeconomic_df[focus_socioeconomic_column
 focused_IL_socioeconomic_df
 ```
 
-#### Integrated Dataset
+#### Integrate the Datasets
 
 ```
 # Integration
@@ -219,6 +219,7 @@ foodaccess_merged_df[food_access_columns].isnull().sum()
 corr_food = merged_df.corr(numeric_only=True)[["RECFAC20", "RECFACPTH20", "PCH_RECFACPTH_16_20"]]
 corr_food
 ```
+#### Create the Visualizations
 
 ```
 # Median Income vs. Food Access per Capita
