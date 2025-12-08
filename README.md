@@ -103,9 +103,10 @@ Overall, there are a lot of different directions that future work in this subjec
 ```
 import pandas as pd
 import seaborn as sns
+import numpy as np
 import matplotlib.pyplot as plt
 ```
-#### Load Data
+#### Load Data - Nutritional + Physical Dataset
 ```
 df1 = pd.read_csv('nutritional_physical.csv')
 ```
@@ -175,6 +176,83 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
+#### Health Dataset
+```
+# Analyze Data Table
+fed_health_df = pd.read_csv('25_food_env_data_HEALTH.csv')
+IL_fed_health_df = fed_health_df[fed_health_df['State'] == 'IL']
+focus_health_columns = ["FIPS", "State", "County", "PCT_OBESE_ADULTS22", "PCT_HSPA21", "RECFAC20", "RECFACPTH20", "PCH_RECFACPTH_16_20"]
+focused_IL_health_df = IL_fed_health_df[focus_health_columns]
+focused_IL_health_df
+```
+
+#### Socioeconomic Dataset
+
+```
+fed_socioeconomic_df = pd.read_csv('25_food_env_data_SOCIOECONOMIC.csv')
+IL_fed_socioeconomic_df = fed_socioeconomic_df[fed_socioeconomic_df['State'] == 'IL']
+focus_socioeconomic_columns = ["FIPS", "State", "County", "PCT_NHWHITE20", "PCT_NHBLACK20", "PCT_HISP20", "PCT_NHASIAN20", "PCT_65OLDER20", "PCT_18YOUNGER20", "POPLOSS15", "METRO23", "MEDHHINC21", "POVRATE21", "DEEPPOVRATE21", "CHILDPOVRATE21", "DEEPCHILDPOVRATE21"]
+focused_IL_socioeconomic_df = IL_fed_socioeconomic_df[focus_socioeconomic_columns]
+focused_IL_socioeconomic_df
+```
+
+#### Integrated Dataset
+
+```
+# Integration
+merged_df = focused_IL_health_df.merge(focused_IL_socioeconomic_df, on=['FIPS', 'State', 'County'], how="inner")
+
+merged_df.head()
+
+foodaccess_merged_df = focused_IL_health_df.merge(
+    focused_IL_socioeconomic_df, on=["FIPS","State","County"], how="inner"
+)
+foodaccess_merged_df.info()
+food_access_columns = ["RECFAC20", "RECFACPTH20", "PCH_RECFACPTH_16_20"]
+for col in food_access_columns:
+    foodaccess_merged_df[col] = pd.to_numeric(foodaccess_merged_df[col], errors='coerce')
+foodaccess_merged_df[food_access_columns].isnull().sum()
+```
+
+```
+# Study correlation
+corr_food = merged_df.corr(numeric_only=True)[["RECFAC20", "RECFACPTH20", "PCH_RECFACPTH_16_20"]]
+corr_food
+```
+
+```
+# Median Income vs. Food Access per Capita
+plt.figure(figsize=(8,5))
+sns.scatterplot(data=merged_df, x="MEDHHINC21", y="RECFACPTH20")
+sns.regplot(data=merged_df, x="MEDHHINC21", y="RECFACPTH20", scatter=False, color='red')
+plt.title("Median Income vs Food Access per Capita in Illinois Counties")
+plt.xlabel("Median Household Income in 2021")
+plt.ylabel("Facilities per 1,000 Residents")
+plt.tight_layout()
+```
+
+```
+# Poverty Rate vs. Food Access per Capita
+plt.figure(figsize=(8,5))
+sns.scatterplot(data=merged_df, x="POVRATE21", y="RECFACPTH20")
+sns.regplot(data=merged_df, x="POVRATE21", y="RECFACPTH20", scatter=False, color='red')
+plt.title("Poverty Rate vs Food Access per Capita")
+plt.xlabel("Poverty Rate (%)")
+plt.ylabel("Facilities per 1,000 Residents")
+plt.tight_layout()
+```
+
+```
+# Poverty Rate vs. Change in Food Access
+plt.figure(figsize=(8,5))
+sns.scatterplot(data=merged_df, x="POVRATE21", y="PCH_RECFACPTH_16_20")
+sns.regplot(data=merged_df, x="POVRATE21", y="PCH_RECFACPTH_16_20", scatter=False, color='red')
+plt.title("Poverty Rate vs Change in Food Access (2016–2020)")
+plt.xlabel("Poverty Rate (%)")
+plt.ylabel("Change in Facilities per 1,000 Residents (2016–2020)")
+plt.tight_layout()
+```
+
 ## References
 - U.S. Department of Agriculture, Economic Research Service. Food Environment Atlas. https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads
 - Economic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
