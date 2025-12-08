@@ -15,7 +15,7 @@ Ultimately, this research would offer a solid foundation in understanding how se
 
 add a summary of findings here!
 
-## Data
+## Data Profile + Quality
 ### Economic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
 
 This dataset includes information about food access data, with specific features such as location (by state and county), population, housing, income, and overall demographics (including race and age). These features relate to different food access metrics in the dataset, mainly low access metrics, along with the different demographics. This dataset is very similar to the previous dataset, just with a few more features. A very similar dataset can be found under the ‘Access and Proximity to Foodstore’ category sheet in the previous dataset, but this one in specific includes more information as it has more rows.
@@ -47,7 +47,6 @@ Consistency: The consistency was checked by checking if there are any logic erro
 
 - **Fit for use**: Overall, this dataset is fit for use, but does require a little bit of cleaning, such as getting rid of the data of the states that we’re not interested in and also deal with the missing values.
 
-## Data Cleaning
 
 ## Findings
 As part of the analysis, we explored several socioeconomic factors, specifically race/ethnicity and income, to determine whether they showed any meaningful relationships with obesity rates and fruit consumption across Illinois. By comparing obesity prevalence and nutritional behavior indicators with demographic and economic characteristics, we aimed to identify potential patterns in how different communities experience access to healthy foods. This comparison helped us investigate whether disparities in income or racial/ethnic composition might be associated with differences in dietary habits or obesity outcomes. This data exploration also helped us determine which socioexoniomic factor we should focus on.
